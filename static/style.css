@@ -16,7 +16,7 @@
   justify-content: center; }
 
 .line {
-  transition: all 12s ease-in-out;
+  transition: transform 12s ease-in-out;
   height: 88vh;
   width: 1px;
   background-color: white; }
