@@ -1,0 +1,28 @@
+.body {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  display: flex;
+  position: relative;
+  height: 90vh;
+  width: 90vw;
+  // border: 1px solid white;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  // position: absolute;
+  transition: all 12s ease-in-out;
+  // transition: all 2s ease-in-out;
+  height: 88vh; 
+  width: 1px;
+  background-color: white;
+}
