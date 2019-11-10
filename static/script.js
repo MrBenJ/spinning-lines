@@ -2,13 +2,16 @@
  * CONFIG PARAMS
  */
 const TOTAL_LINES = 200;
+const COLOR_CHANGE_AFTER_DEGREES = 720;
 const ROTATION_INCREMENT = 5;
 const COLORS = [
   "#B1DDF1",
   "#0080FF",
   "#008ECC",
   "#0E4D92",
-  "#008081"
+  "#008081",
+  "#00CC00",
+  "#878787"
 ];
 
 /**
@@ -36,7 +39,7 @@ loop();
 function loop() {
   window.requestAnimationFrame(loop);
   const line = lines[i];
-  const totalTurns = Math.floor(rotation / 360);
+  const totalTurns = Math.floor(rotation / COLOR_CHANGE_AFTER_DEGREES);
   const colorIndex = Math.floor(totalTurns % COLORS.length);
   line.style = `transform: rotateZ(${rotation}deg); background-color: ${COLORS[colorIndex]};`;
   
